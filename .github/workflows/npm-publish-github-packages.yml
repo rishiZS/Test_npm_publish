@@ -32,7 +32,7 @@ jobs:
 
           registry-url: https://npm.pkg.github.com/
 
-          scope: '@rishiZS'
+          scope: '@rishizs'
 
       - run: npm install
 
