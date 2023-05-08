@@ -1,15 +1,15 @@
 {
-  "name":"@rishiZS/test_npm_publish",
+  "name":"@rishizs/test_npm_publish",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@rishiZS"
+    "registry": "https://npm.pkg.github.com/@rishizs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rishiZS/test_npm_publish.git",
-    "directory": "@rishiZS/test_npm_publish"
+    "url": "git+https://github.com/rishizs/test_npm_publish.git",
+    "directory": "@rishizs/test_npm_publish"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
