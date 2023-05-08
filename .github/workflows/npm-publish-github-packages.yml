@@ -1,23 +1,43 @@
-name: publish to github
+name: Node.js Package
+
+
+
 
 on:
+
   push:
+
     branches:
+
       - main
 
+
+
+
 jobs:
+
   publish-gpr:
+
     runs-on: ubuntu-latest
+
     steps:
+
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v1
+
         with:
+
           node-version: 14
+
           registry-url: https://npm.pkg.github.com/
-          scope: '@rishZS'
-      - run: yarn install
-      - run: yarn bootstrap
-      - run: yarn build
-      - run: yarn publish-zode
+
+          scope: '@satishkushwaha5815'
+
+      - run: npm install
+
+      - run: npm publish
+
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}
+
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
